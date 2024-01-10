@@ -27,6 +27,7 @@ TestNG,
 Chrome Browser
 
 REQUIREMENTS:
+
 Utilize Java and Selenium for automation.
 Ensure tests run and pass on the Chrome browser.
 Design a scalable and maintainable automation framework.
@@ -41,7 +42,9 @@ Enable test cases to run seamlessly in parallel using TestNG or JUnit.
 No data should be hard coded into the scripts.
 
 To Start Execution:
-Setup
+
+SETUP
+
 1.Clone the repository:
 command: git clone https://github.com/saikumar7893/FlightBooking_MiniProject.git
 
@@ -80,7 +83,9 @@ pom.xml: It contains configuration information related to the project's build pr
 PROJECT INFORMATION:
 
 Group ID: Identifies the project's group.
+
 Artifact ID: Specifies the project's unique identifier.
+
 Version: Represents the version of the project.
 
 
