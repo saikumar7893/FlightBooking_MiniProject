@@ -16,7 +16,7 @@ Chrome Browser
 
 Setup
 1.Clone the repository:
-command: git clone https://github.com/yourusername/travel-booking-automation.git
+command: git clone https://github.com/saikumar7893/FlightBooking_MiniProject.git
 
 2.Navigate to the project directory:
 command: cd travel-booking-automation
