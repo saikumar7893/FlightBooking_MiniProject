@@ -51,7 +51,8 @@ command: cd travel-booking-automation
 3.Install dependencies:
 command: mvn clean install
 
-Framework Structure
+FRAMEWORK STRUCTURE:
+
 The framework follows the Page Object Model (POM) design pattern and includes:
 
 src/main/java/BaseTest: BaseTest contains the BaseClass in which all the page objects are inheriting the common basic features from it.
@@ -76,91 +77,57 @@ src/test/java/BookingFlight: Test class implementing scenarios.
 
 pom.xml: It contains configuration information related to the project's build process, dependencies, plugins, and other settings. 
 
-Project Information:
+PROJECT INFORMATION:
+
 Group ID: Identifies the project's group.
 Artifact ID: Specifies the project's unique identifier.
 Version: Represents the version of the project.
 
-<groupId>org.example</groupId>
-    <artifactId>AuzmorAutomatioFramework</artifactId>
-    <version>1.0-SNAPSHOT</version>
 
-Dependencies
+
+DEPENDENCIES:
+
 Selenium WebDriver (4.14.0):
 Selenium is a powerful tool for controlling web browsers through programs and performing browser automation.
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>4.14.0</version>
-</dependency>
 
 Log4j (1.2.17):
 Log4j is a logging library for Java.
-<dependency>
-    <groupId>log4j</groupId>
-    <artifactId>log4j</artifactId>
-    <version>1.2.17</version>
-</dependency>
 
 JUnit (4.13.2):
 JUnit is a simple framework to write repeatable tests.
-<dependency>
-    <groupId>junit</groupId>
-    <artifactId>junit</artifactId>
-    <version>4.13.2</version>
-    <scope>test</scope>
-</dependency>
 
 WebdriverManager (5.6.2):
 WebDriverManager is a library that helps to automate the management of the binary drivers required by Selenium WebDriver.
-<dependency>
-    <groupId>io.github.bonigarcia</groupId>
-    <artifactId>webdrivermanager</artifactId>
-    <version>5.6.2</version>
-</dependency>
 
 TestNG (7.8.0):
 TestNG is a testing framework inspired by JUnit and NUnit but introducing some new functionalities that make it more powerful and easier to use.
-<dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>7.8.0</version>
-    <scope>test</scope>
-</dependency>
-
-<dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>7.8.0</version>
-    <scope>compile</scope>
-</dependency>
 
 Apache POI (4.1.2):
 Apache POI is a set of Java APIs to manipulate various file formats based on Microsoft Office standards.
-<dependency>
-    <groupId>org.apache.poi</groupId>
-    <artifactId>poi</artifactId>
-    <version>4.1.2</version>
-</dependency>
 
-<dependency>
-    <groupId>org.apache.poi</groupId>
-    <artifactId>poi-ooxml</artifactId>
-    <version>4.1.2</version>
-</dependency>
+Working Process: 
+In this UI Automation using Automation FrameWork I have created POM(Page Object Model) mostly for clean structure and to avoid Duplication in the test cases.
 
-Working Process: In this UI Automation using Automation FrameWork I have created POM(Page Object Model) mostly for clean structure and to avoid Duplication in the test cases.
 At First we need to setup a driver to initialize the browser or fire fox etc..
+
 In order to prevent Hard Coding I have created config.properties and with the help of ReadPropertyFile I used to get the keys from it like url and contavt details information.
+
 In the Home Page initially I have selected the round trip and automated the from and to locations with the help of the xpaths.
+
 Later on navigated to the Flights Selection Page and clicked on view details based on our requirements.
+
 Now you will be redirected to the ContactInformationPage where you need to send the information like mail,phone number without hard coding.
+
 This time you will be navigated to the seat selection and click on the skip.
+
 Finally you will be in the page Check and pay shows you the end of the Automation, There you need to pick the information regarding the contact, Traveller, and the baggage details
 with the help of the xpath and gettext methods.
+
 I have created a BookingFlight class where objects of the page objects are created and accessed the methods of it. It can be executed with the help of the TestNG. We need to use multiple 
 Systematic Annotations such as @BeforeMethod, @Test, @AfterMethod
+
 @BeforeMethod allows the method to execute before the execution of each @Test methods, whereas @afterMethod is executed after the execution of each @Test methods.
+
 Finally I have Asserted the Information with expected values and Returned the successfull automation process.
 
 
