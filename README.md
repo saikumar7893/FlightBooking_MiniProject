@@ -1,4 +1,5 @@
-PROJECT TITLE: Selenium Automation Framework for Travel Booking Platform  
+PROJECT TITLE: Selenium Automation Framework for Travel Booking Platform 
+
 URL: https://flights.booking.com/
 
 PROBLEM STATEMENT: 
