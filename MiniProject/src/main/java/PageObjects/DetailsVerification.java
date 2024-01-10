@@ -72,6 +72,12 @@ public class DetailsVerification extends BaseClass {
                 && newname.equals(name) && sexual.equals(newgender)
                 && FlightsSelect.cabinBag.equals(CabinBag) && FlightsSelect.checkBag.equals(CheckBag)) {
             System.out.println("Successfully Verified Contact, Traveller Details & Baggage Details");
+                    System.out.println("The Contact Details are:");
+        System.out.println("Mail Id="+mail+" "+"Phone number="+phn);
+        System.out.println("The Traveller Details are:");
+        System.out.println("Name is"+newname+" "+"Gender is"+newgender);
+        System.out.println("The Baggage Details are:");
+        System.out.println(CabinBag+" "+CheckBag);
         } else if (!(verifymail.equals(mail) && verifynumber.equals(phn))) {
             System.out.println("False Information");
         } else if (!(newname.equals(name) && sexual.equals(newgender))) {
@@ -79,13 +85,13 @@ public class DetailsVerification extends BaseClass {
         } else {
             System.out.println("Mismatch in the Baggage Details");
         }
+ //        Assert.assertEquals(verifymail,mail,"Mismatch in mail");
+//        Assert.assertEquals(verifynumber,phn,"Mismatch in phonenumber");
+//        Assert.assertEquals(newname,name,"error in the name");
+//        Assert.assertEquals(sexual,newgender,"Error in the gender");
+//        Assert.assertEquals(cabinbag.equals(CabinBag),checkbag.equals(CheckBag),"Error in the Bagging Details");
 
-        System.out.println("The Contact Details are:");
-        System.out.println("Mail Id="+mail+" "+"Phone number="+phn);
-        System.out.println("The Traveller Details are:");
-        System.out.println("Name is"+newname+" "+"Gender is"+newgender);
-        System.out.println("The Baggage Details are:");
-        System.out.println(CabinBag+" "+CheckBag);
+
 
     }
 }
