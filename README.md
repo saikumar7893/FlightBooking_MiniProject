@@ -2,6 +2,7 @@ PROJECT TITLE: Selenium Automation Framework for Travel Booking Platform
 URL: https://flights.booking.com/
 
 PROBLEM STATEMENT: 
+
 Search and Flight Selection:
 Open the URL: https://flights.booking.com/
 Search for a flight with specified departure and arrival destinations and dates.
@@ -110,30 +111,31 @@ TestNG is a testing framework inspired by JUnit and NUnit but introducing some n
 Apache POI (4.1.2):
 Apache POI is a set of Java APIs to manipulate various file formats based on Microsoft Office standards.
 
-Working Process: 
-In this UI Automation using Automation FrameWork I have created POM(Page Object Model) mostly for clean structure and to avoid Duplication in the test cases.
+WORKING PROCESS:
 
-At First we need to setup a driver to initialize the browser or fire fox etc..
+1. In this UI Automation using Automation FrameWork I have created POM(Page Object Model) mostly for clean structure and to avoid Duplication in the test cases.
 
-In order to prevent Hard Coding I have created config.properties and with the help of ReadPropertyFile I used to get the keys from it like url and contavt details information.
+2. At First we need to setup a driver to initialize the browser or fire fox etc..
 
-In the Home Page initially I have selected the round trip and automated the from and to locations with the help of the xpaths.
+3. In order to prevent Hard Coding I have created config.properties and with the help of ReadPropertyFile I used to get the keys from it like url and contavt details information.
 
-Later on navigated to the Flights Selection Page and clicked on view details based on our requirements.
+4. In the Home Page initially I have selected the round trip and automated the from and to locations with the help of the xpaths.
 
-Now you will be redirected to the ContactInformationPage where you need to send the information like mail,phone number without hard coding.
+5. Later on navigated to the Flights Selection Page and clicked on view details based on our requirements.
 
-This time you will be navigated to the seat selection and click on the skip.
+6. Now you will be redirected to the ContactInformationPage where you need to send the information like mail,phone number without hard coding.
 
-Finally you will be in the page Check and pay shows you the end of the Automation, There you need to pick the information regarding the contact, Traveller, and the baggage details
+7. This time you will be navigated to the seat selection and click on the skip.
+
+8. Finally you will be in the page Check and pay shows you the end of the Automation, There you need to pick the information regarding the contact, Traveller, and the baggage details
 with the help of the xpath and gettext methods.
 
-I have created a BookingFlight class where objects of the page objects are created and accessed the methods of it. It can be executed with the help of the TestNG. We need to use multiple 
+9. I have created a BookingFlight class where objects of the page objects are created and accessed the methods of it. It can be executed with the help of the TestNG. We need to use multiple 
 Systematic Annotations such as @BeforeMethod, @Test, @AfterMethod
 
-@BeforeMethod allows the method to execute before the execution of each @Test methods, whereas @afterMethod is executed after the execution of each @Test methods.
+10. @BeforeMethod allows the method to execute before the execution of each @Test methods, whereas @afterMethod is executed after the execution of each @Test methods.
 
-Finally I have Asserted the Information with expected values and Returned the successfull automation process.
+11. Finally I have Asserted the Information with expected values and Returned the successfull automation process.
 
 
 
