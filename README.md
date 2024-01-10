@@ -4,19 +4,28 @@ URL: https://flights.booking.com/
 PROBLEM STATEMENT: 
 
 Search and Flight Selection:
+
 Open the URL: https://flights.booking.com/
+
 Search for a flight with specified departure and arrival destinations and dates.
+
 Select a flight from the search results.
+
 Passenger Details and Booking:
+
 Enter passenger details including name, age, and contact information.
+
 Fill the details and go till Check and pay page
+
 Verification:
+
 Verify the Contact Details, Passenger Details and Baggage information
 
 
 OVERVIEW:
-This repository contains an automated testing framework designed for the travel booking platform using Java and Selenium. The framework aims to provide a scalable,
-maintainable, and platform-independent solution for testing flight search, selection, and booking processes.
+This repository contains an automated testing framework designed for the travel booking platform using Java and Selenium.
+The framework aims to provide a scalable, maintainable, and platform-independent solution for testing flight search, 
+selection, and booking processes.
 
 PREREQUISITES:
 Before running the tests, ensure you have the following installed:
@@ -30,16 +39,27 @@ Chrome Browser
 REQUIREMENTS:
 
 Utilize Java and Selenium for automation.
+
 Ensure tests run and pass on the Chrome browser.
+
 Design a scalable and maintainable automation framework.
+
 Implement helper methods for common interactions like searching, selecting, and filling forms.
+
 Maintain platform-independent code (compatible with Windows, macOS, Linux).
+
 Include a README file with detailed instructions on executing the framework.
+
 Support local execution and Selenium Grid for parallel testing.
+
 (Optional, Good to Have) Dockerize the automation framework.
+
 (Optional, Good to Have) Set up a Jenkins pipeline for automated execution on Selenium Grid.
+
 Apply appropriate design patterns (e.g., Page Object Model, Factory pattern) for maintainability.
+
 Enable test cases to run seamlessly in parallel using TestNG or JUnit.
+
 No data should be hard coded into the scripts.
 
 To Start Execution:
@@ -60,6 +80,7 @@ FRAMEWORK STRUCTURE:
 The framework follows the Page Object Model (POM) design pattern and includes:
 
 src/main/java/BaseTest: BaseTest contains the BaseClass in which all the page objects are inheriting the common basic features from it.
+
 src/main/java/PageObjects: It contains all the page clases representing the different Pages of an application.
 
                          /HomePage: Initial Page of the Flight Booking Application
@@ -73,7 +94,7 @@ src/main/java/PageObjects: It contains all the page clases representing the diff
                          /DetailsVerification:After all the Flights and Details are selected It will be landed into the payment Page that gives the Information about the contact details,
                           traveller and the baggage details will be verified here.
                           
-src/main/java/Utilities/ReadPropertyFile: ReadPropertyFile, provides a method (getProperty1) for reading a specified key's value from a configuration file (Config.properties).
+src/main/java/Utilities/ReadPropertyFile: provides a method (getProperty1) for reading a specified key's value from a configuration file (Config.properties).
 
 src/main/resources: It contains the Configuration Properties
 
