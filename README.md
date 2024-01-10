@@ -28,15 +28,24 @@ The framework follows the Page Object Model (POM) design pattern and includes:
 
 src/main/java/BaseTest: BaseTest contains the BaseClass in which all the page objects are inheriting the common basic features from it.
 src/main/java/PageObjects: It contains all the page clases representing the different Pages of an application.
+
                          /HomePage: Initial Page of the Flight Booking Application
+                         
                          /FlightSelect: page where we are going to select the customized Flight.
+                         
                          /ContactInformationPage: Here It takes the details of the travellers.
+                         
                          /SeatSelection: Selection of the Flight Tickets in this Page.
+                         
                          /DetailsVerification:After all the Flights and Details are selected It will be landed into the payment Page that gives the Information about the contact details,
                           traveller and the baggage details will be verified here.
+                          
 src/main/java/Utilities/ReadPropertyFile: ReadPropertyFile, provides a method (getProperty1) for reading a specified key's value from a configuration file (Config.properties).
+
 src/main/resources: It contains the Configuration Properties
+
 src/test/java/BookingFlight: Test class implementing scenarios.
+
 pom.xml: It contains configuration information related to the project's build process, dependencies, plugins, and other settings. 
 
 Project Information:
