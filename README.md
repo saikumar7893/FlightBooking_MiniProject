@@ -1,7 +1,7 @@
-project title: Selenium Automation Framework for Travel Booking Platform  
+PROJECT TITLE: Selenium Automation Framework for Travel Booking Platform  
 URL: https://flights.booking.com/
 
-Problem Statement: 
+PROBLEM STATEMENT: 
 Search and Flight Selection:
 Open the URL: https://flights.booking.com/
 Search for a flight with specified departure and arrival destinations and dates.
@@ -13,20 +13,20 @@ Verification:
 Verify the Contact Details, Passenger Details and Baggage information
 
 
-Overview
+OVERVIEW:
 This repository contains an automated testing framework designed for the travel booking platform using Java and Selenium. The framework aims to provide a scalable,
 maintainable, and platform-independent solution for testing flight search, selection, and booking processes.
 
-Prerequisites
+PREREQUISITES:
 Before running the tests, ensure you have the following installed:
 
-Java Development Kit (JDK)
-Maven
-Selenium
-TestNG
+Java Development Kit (JDK),
+Maven,
+Selenium,
+TestNG,
 Chrome Browser
 
-Requirements:
+REQUIREMENTS:
 Utilize Java and Selenium for automation.
 Ensure tests run and pass on the Chrome browser.
 Design a scalable and maintainable automation framework.
