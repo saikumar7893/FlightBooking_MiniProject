@@ -80,11 +80,15 @@ FRAMEWORK STRUCTURE:
 
 The framework follows the Page Object Model (POM) design pattern and includes:
 
+MiniProject/Screenshots:Captures the screenshots here.
+
 src/main/java/BaseTest: BaseTest contains the BaseClass in which all the page objects are inheriting the common basic features from it.
 
 src/main/java/PageObjects: It contains all the page clases representing the different Pages of an application.
 
                          /HomePage: Initial Page of the Flight Booking Application
+
+                         /HomePageLocationTest: Initial Page for the Second TestCase
                          
                          /FlightSelect: page where we are going to select the customized Flight.
                          
@@ -97,9 +101,13 @@ src/main/java/PageObjects: It contains all the page clases representing the diff
                           
 src/main/java/Utilities/ReadPropertyFile: provides a method (getProperty1) for reading a specified key's value from a configuration file (Config.properties).
 
+                       /Utility: This class contains the Functionality for the Screenshot when ever the user needs the reequirements like failure occurs or success.
+
 src/main/resources: It contains the Configuration Properties
 
 src/test/java/BookingFlight: Test class implementing scenarios.
+
+             /FlightLocations: Implementing the Test Case for the Invalid Locations
 
 pom.xml: It contains configuration information related to the project's build process, dependencies, plugins, and other settings. 
 
@@ -135,6 +143,8 @@ Apache POI is a set of Java APIs to manipulate various file formats based on Mic
 
 WORKING PROCESS:
 
+TEST CASE-1:
+
 1. In this UI Automation using Automation FrameWork I have created POM(Page Object Model) mostly for clean structure and to avoid Duplication in the test cases.
 
 2. At First we need to setup a driver to initialize the browser or fire fox etc..
@@ -158,6 +168,18 @@ Systematic Annotations such as @BeforeMethod, @Test, @AfterMethod
 10. @BeforeMethod allows the method to execute before the execution of each @Test methods, whereas @afterMethod is executed after the execution of each @Test methods.
 
 11. Finally I have Asserted the Information with expected values and Returned the successfull automation process.
+
+TESTCASE-2:
+
+1.A Small Base Test Case where Evaluating the from and to locations in the Home page.
+
+2.Initially in this I have given the from and to location names as same.
+
+3.So there is an error that gives Origin and Destination cant be same.
+
+4.With the help of Method in the Utility Class I will take the screen shot of the page when ever the error occurs.
+
+5.And the images will be stored in the Same Folder Structure as given by the Xpath.
 
 
 
